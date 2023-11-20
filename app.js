@@ -14,7 +14,7 @@ function appStart() {
       const block = document.querySelector(
         `.board-block[data-index='${attempts}${i}']`
       );
-      const 입력한_글자 = block.innerText;
+      const 입력한_글자 = block.textContent;
       const 정답_글자 = 정답[i];
       if (입력한_글자 === 정답_글자) block.style.background = "#6aaa64";
       else if (정답.includes(입력한_글자)) block.style.background = "#c9b458";
